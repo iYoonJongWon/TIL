@@ -4,9 +4,9 @@ fun Greeting(name: String) {
     Column {
         for (i in 1..10) {
             MySpacerDemo(i)
-            }
         }
     }
+}
 
 
 }@Composable
@@ -34,5 +34,5 @@ fun Greeting(name: String) {
             modifier = imageModifier
         )
 
-        }
     }
+}
