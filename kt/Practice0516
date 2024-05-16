@@ -1,0 +1,81 @@
+
+var a = 1
+a = 2
+val b = 1
+//b = 2 val이라 데이터 바꿀 때 오류
+
+var c:Int = 3
+//var c:Int = 3.5 소수라서 인트 오류
+var c_1:Double =3.0
+//var c:Double = 3 소숫점이 없어서 Double 오류
+var c_2:String = "안녕하세요"
+//var c:String = 안녕하세요 ""없어서 String 오류
+////var d: Boolean = 1234
+
+
+println("안녕하세요")
+
+fun operator(e: Double,e_1: Double){
+    var plus = (e + e_1)
+    var minus = (e - e_1)
+    var multi = (e * e_1)
+    var division = (e % e_1)
+    var plusplus = plus++
+
+    println(plus)
+    println(plusplus) //plusplus는 plus에 위에 +1을 해준다
+    println(minus)
+    println(multi)
+    println(division)
+}
+operator(e = 4.5, e_1 = 4.0)
+
+
+
+fun Condition(f: Int, g: Int){
+    if (f < g) {
+        println("g가 크다")
+    } else println("f가 작거나 같다")
+}
+Condition(4,5)
+Condition(5,4)
+
+
+fun Condition1(h: Int, i: Int) {
+    if (i > 100) {
+        println("i가 100이 넘었습니다")
+    } else if (h < i) {
+        println("i가 크다")
+    } else if (h > i) {
+        println("h가 크다")
+    } else {
+        println("같다")
+    }
+}
+
+Condition1(500,400)
+Condition1(4,5)
+Condition1(5,4)
+Condition1(40,40)
+
+
+var z = 1
+
+
+
+var num=0
+for (num in 0..500 step 50){
+    var num = num
+    println(num) // 0부터 시작해 50배수로 나열
+}
+println(num)
+
+var x = 1
+while (x < 9) {
+    x = ++x
+    var y = 1
+    while (y < 9) {
+        y = ++y
+        println("$x * $y = ${x * y}")
+    }
+}
